@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Preview Card</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Outfit:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body{
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: hsl(47, 88%, 63%);
+      font-family: "Figtree";
+    }
+    .card{
+      width: 22.5vw;
+      border: 2px solid rgba(0, 0, 0, 0.734);
+      border-radius: 15px;
+      background-color: hsl(0, 0%, 100%);
+      padding: 15px;
+    }
+    .img{
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+    img{
+      width: 100%;
+      border-radius: 10px;
+    }
+    .details{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      justify-content: start; 
+      align-items: start;
+    }
+    button{
+      padding: 6px 20px; 
+      border-radius: 4px;
+      border: none;
+      font-weight: 800;
+      font-family: "Figtree";
+      background-color: hsl(47, 88%, 63%);
+      margin: 10px 0px;
+    }
+    .description{
+      color: hsl(0, 0%, 42%);
+      font-size: 16px;
+    }
+    .profile{
+      display: flex; 
+      gap: 10px;
+      align-items: center;
+
+    }
+    .profile-pic{
+      width: 30px;
+      height: 30px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .profile-name{
+      font-weight: 800;
+      font-size: 14px;
+    }
+    .published-text{
+      font-weight: 500;
+    }
+
+    @media screen and (max-width: 400px)  {
+      .card{
+        width: 80vw;
+      }
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="card">
+
+    <div class="img">
+      <img src="./assets/images/illustration-article.svg" alt="">
+    </div>
+
+    <button>Learning</button>
+    <div class="details">
+      <p class="published-text">Published 10 Aug 2024</p>
+      <h2>HTML & CSS Foundations</h2>
+      <p class="description">These languages are the backbone of every website, defining structure, content, and presentation</p>
+      <div class="profile">
+        <img src="./assets/images/image-avatar.webp" alt="profile-photo" class="profile-pic">
+        <p class="profile-name">Greg Hooper</p>
+      </div>
+    </div>
+
+
+  </div>
+  
+</body>
+</html>
